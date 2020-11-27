@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.2083403105575286 -0.9062846171291493 -0.3677533245966159 2.209415958249884
-  position -0.4093348621779218 0.4489005407609379 -0.2510231081009978
+  orientation 0.959391402074891 0.1729428688730023 0.2228427735663651 5.762373481240149
+  position -1.3009652971514218 6.832174373390363 11.259948029258798
 }
 TexturedBackground {
 }
@@ -13,44 +13,14 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0 -0.01 0
   rotation 1 0 0 -5.307179586466759e-06
+  floorSize 50 50
+  floorTileSize 10 10
+  wallHeight 5
 }
-TinkerbotsBase {
-  translation 0 0.03 0
-  rotation 4.7949e-09 -1 1.32679e-06 3.14159
-  upSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 1.5707996938995747
-      name "Left_Motor"
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-    rightSlot TinkerbotsMotor {
-      rotation 0 0 1 -1.5707996938995747
-      name "Left_Motor_Back"
-      frontSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-  }
-  downSlot TinkerbotsCube {
-    leftSlot TinkerbotsMotor {
-      rotation 0 0 1 -1.5707996938995747
-      name "Right_motor_Back"
-      backSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-    rightSlot TinkerbotsMotor {
-      rotation 0 0 1 1.5708003061004252
-      name "Right_Motor"
-      backSlot TinkerbotsAxle {
-        endSlot TinkerbotsWheel {
-        }
-      }
-    }
-  }
+Mantis {
+  translation 0 1.08 0
+  controller "Mech_Project_Zdenek_Mikulenka"
+  controllerArgs [
+    ""
+  ]
 }
