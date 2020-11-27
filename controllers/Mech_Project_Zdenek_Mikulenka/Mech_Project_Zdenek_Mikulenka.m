@@ -38,12 +38,12 @@ Left_Front_Knee = wb_robot_get_device('LAT');
 %        wb_robot_get_device('LPC'), wb_robot_get_device('LPF'), wb_robot_get_device('LPT');...                                                                                       ];
 %        wb_robot_get_device('LMC'), wb_robot_get_device('LMF'), wb_robot_get_device('LMT');...
 %        wb_robot_get_device('LAC'), wb_robot_get_device('LAF'), wb_robot_get_device('LAT')];
-
+% Move_Forward() %Momentalne neplatny pokus. Funkci kdyztak najdes ve slozce
 pause(2);
 wb_motor_set_position(Right_Rear_Shdr, 1);
 wb_motor_set_velocity(Right_Rear_Shdr, Max_S);
 
-wb_motor_set_position(Right_Rear_Base, 0.55);
+wb_motor_set_position(Right_Rear_Base, 0.35);
 wb_motor_set_velocity(Right_Rear_Base, Max_S);
 
 wb_motor_set_position(Right_Rear_Knee, -2);
@@ -68,6 +68,8 @@ wb_motor_set_velocity(Left_Mid_Base, Max_S);
 
 wb_motor_set_position(Left_Mid_Knee, -2);
 wb_motor_set_velocity(Left_Mid_Knee, Max_S);
+
+
 while wb_robot_step(TIME_STEP) ~= -1
 
   drawnow;
