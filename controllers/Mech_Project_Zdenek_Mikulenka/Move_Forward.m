@@ -1,32 +1,32 @@
-function [] = Move_Forward()
+function [] = Move_Forward(Legs)
 pause(2);
-wb_motor_set_position(Right_Rear_Shdr, 1);
-wb_motor_set_velocity(Right_Rear_Shdr, Max_S);
+wb_motor_set_position(Legs(1, 2), 1);
+wb_motor_set_velocity(Legs(1, 2), Max_S);
 
-wb_motor_set_position(Right_Rear_Base, 0.55);
-wb_motor_set_velocity(Right_Rear_Base, Max_S);
+wb_motor_set_position(Legs(1, 1), 0.55);
+wb_motor_set_velocity(Legs(1, 1), Max_S);
 
-wb_motor_set_position(Right_Rear_Knee, -2);
-wb_motor_set_velocity(Right_Rear_Knee, Max_S);
-
-pause(2);
-wb_motor_set_position(Right_Front_Shdr, 1);
-wb_motor_set_velocity(Right_Front_Shdr, Max_S);
-
-wb_motor_set_position(Right_Front_Base, 0.55);
-wb_motor_set_velocity(Right_Front_Base, Max_S);
-
-wb_motor_set_position(Right_Front_Knee, -2);
-wb_motor_set_velocity(Right_Front_Knee, Max_S);
+wb_motor_set_position(Legs(1, 3), -2);
+wb_motor_set_velocity(Legs(1, 3), Max_S);
 
 pause(2);
-wb_motor_set_position(Left_Mid_Shdr, 1);
-wb_motor_set_velocity(Left_Mid_Shdr, Max_S);
+wb_motor_set_position(Legs(3, 2), 1);
+wb_motor_set_velocity(Legs(3, 2), Max_S);
 
-wb_motor_set_position(Left_Mid_Base, -0.55);
-wb_motor_set_velocity(Left_Mid_Base, Max_S);
+wb_motor_set_position(Legs(3, 1), 0.55);
+wb_motor_set_velocity(Legs(3, 1), Max_S);
 
-wb_motor_set_position(Left_Mid_Knee, -2);
-wb_motor_set_velocity(Left_Mid_Knee, Max_S);
+wb_motor_set_position(Legs(3, 3), -2);
+wb_motor_set_velocity(Legs(3, 3), Max_S);
+
+pause(2);
+wb_motor_set_position(Legs(5, 2), 1);
+wb_motor_set_velocity(Legs(5, 2), Max_S);
+
+wb_motor_set_position(Legs(5, 1), -0.55);
+wb_motor_set_velocity(Legs(5, 1), Max_S);
+
+wb_motor_set_position(Legs(5, 3), -2);
+wb_motor_set_velocity(Legs(5, 3), Max_S);
 end
 
