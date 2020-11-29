@@ -1,4 +1,4 @@
-function [] = Move_Forward(Legs)
+function  Move_Forward(Legs, Max_S)
 pause(2);
 wb_motor_set_position(Legs(1, 2), 1);
 wb_motor_set_velocity(Legs(1, 2), Max_S);
