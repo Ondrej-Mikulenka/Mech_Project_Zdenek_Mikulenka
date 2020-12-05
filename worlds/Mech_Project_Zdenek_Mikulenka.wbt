@@ -3,22 +3,22 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.9942260047976975 0.004974705547372123 0.107190968316951 5.26503546705614
-  position 0.3110156069912309 9.35478906789254 6.3620536180629195
+  orientation 0.06570206860630481 0.945999075522616 0.3174413131449788 3.8207647792012276
+  position -9.64781533524259 9.614117209863316 -10.56610130683978
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
-  translation 0 -0.01 0
+  translation 0 0.34 -1.85748e-06
   rotation 1 0 0 -5.307179586466759e-06
   floorSize 50 50
   floorTileSize 10 10
   wallHeight 5
 }
 Mantis {
-  translation 0 1.08 0
+  translation 0 1.07 0
   controller "Mech_Project_Zdenek_Mikulenka"
   controllerArgs [
     ""
