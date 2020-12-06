@@ -15,6 +15,7 @@ for n = 1:6
         for i = 1:3
           wb_motor_set_position(Legs(i, 2), shdr_up);
           wb_motor_set_position(Legs(i, 3), knee_up);
+          pause(0.1)
           drawnow;
         end
 
@@ -22,6 +23,7 @@ for n = 1:6
         for i = 1:3  
           wb_motor_set_position(Legs(i, 1), offset(i)+(-1)^(i+1)*0.25);
           wb_motor_set_position(Legs(3+i, 1), offset(4-i)+(-1)^(i+1)*0.25);
+          pause(0.1)
           drawnow;
         end
         %wb_motor_set_position(Legs(1, 1), -0.6+0.25); %zadní
@@ -35,6 +37,7 @@ for n = 1:6
         for i = 1:3
           wb_motor_set_position(Legs(i, 2), shdr_down);
           wb_motor_set_position(Legs(i, 3), knee_down);
+          pause(0.1)
           drawnow;
         end
 
@@ -42,6 +45,7 @@ for n = 1:6
         for i = 4:6
           wb_motor_set_position(Legs(i, 2), shdr_up);
           wb_motor_set_position(Legs(i, 3), knee_up);
+          pause(0.1)
           drawnow;
         end
 
@@ -49,6 +53,7 @@ for n = 1:6
         for i = 1:3
           wb_motor_set_position(Legs(i, 1), offset(4-i)+(-1)^(i+1)*0.25);
           wb_motor_set_position(Legs(3+i, 1), offset(i)+(-1)^(i+1)*0.25);
+          pause(0.1)
           drawnow;
         end
 
@@ -56,6 +61,7 @@ for n = 1:6
         for i = 4:6
           wb_motor_set_position(Legs(i, 2), shdr_down);
           wb_motor_set_position(Legs(i, 3), knee_down);
+          pause(0.1)
           drawnow; 
         end
 
