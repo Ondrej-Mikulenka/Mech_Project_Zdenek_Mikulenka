@@ -23,7 +23,12 @@ offset = [-0.6,0,0.6];
 shdr_up = 1;
 shdr_down =0.8; 
 knee_up = -2.35;
-knee_down =-2.4; 
+knee_down =-2.4;
+%offset hodnoty na zvednutí těla
+%shdr_up = 0;
+%shdr_down =-0.2; 
+%knee_up = -0.95;
+%knee_down =-1;  
 n = 1;
 while wb_robot_step(TIME_STEP) ~= -1
 
