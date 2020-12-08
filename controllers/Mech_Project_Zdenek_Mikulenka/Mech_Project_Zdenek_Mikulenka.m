@@ -43,8 +43,10 @@ while wb_robot_step(TIME_STEP) ~= -1
         
       case 2
         for i = 1:3  
-          wb_motor_set_position(Legs(i, 1), offset(i)+(-1)^(i+1)*0.25);
-          wb_motor_set_position(Legs(3+i, 1), offset(4-i)+(-1)^(i+1)*0.25);
+          %wb_motor_set_position(Legs(i, 1), offset(i)+(-1)^(i+1)*0.25);
+          %wb_motor_set_position(Legs(3+i, 1), offset(4-i)+(-1)^(i+1)*0.25);
+          wb_motor_set_position(Legs(i, 1), offset(i)+(-1)*0.25);
+          wb_motor_set_position(Legs(3+i, 1), offset(4-i)+(+1)*0.25);
         end
         n = 3;
         drawnow;
@@ -73,8 +75,10 @@ while wb_robot_step(TIME_STEP) ~= -1
         
       case 5
         for i = 4:6
-          wb_motor_set_position(Legs(i-3, 1), offset(i-3)+(-1)^(i+1)*0.25);
-          wb_motor_set_position(Legs(i, 1), offset(7-i)+(-1)^(i+1)*0.25);
+          %wb_motor_set_position(Legs(i-3, 1), offset(i-3)+(-1)^(i+1)*0.25);
+          %wb_motor_set_position(Legs(i, 1), offset(7-i)+(-1)^(i+1)*0.25);
+          wb_motor_set_position(Legs(i-3, 1), offset(i-3)+(+1)*0.25);
+          wb_motor_set_position(Legs(i, 1), offset(7-i)+(-1)*0.25);
         end
         n = 6;
         drawnow;
