@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.8951671313328897 0.3856475168418679 0.22349899269335957 5.547952430852169
-  position -5.6660162305928985 12.725770072439666 16.263034728682396
+  orientation 0.041250362941618 0.988174629298045 0.1476797534154761 4.135070983690333
+  position -17.61202546546948 6.042457831508117 -11.721022107963881
 }
 TexturedBackground {
   texture "mars"
@@ -14,12 +14,7 @@ TexturedBackgroundLight {
   luminosity -11
 }
 Mantis {
-  hidden rotation_13 0 0 -1 2.299969999978623
-  hidden rotation_22 0 0 -1 2.299969999978623
-  hidden rotation_31 0 0 -1 2.299979999978623
-  hidden rotation_40 0 0 -1 2.299969999978623
-  hidden rotation_49 0 0 -1 2.299969999978623
-  translation 0 1.07 3.05
+  translation 0 0.23 3.05
   controller "Mech_Project_Zdenek_Mikulenka"
   controllerArgs [
     ""
@@ -29,17 +24,11 @@ ThreeSteps {
   translation 0 -0.26 -4.4
 }
 UnevenTerrain {
-  translation 0 -2.74 0
-  rotation 0 0 1 4.692820414042842e-06
-  size 50 10 50
+  translation 0 -3.75 0
   appearance SandyGround {
     textureTransform TextureTransform {
       scale 50 50
     }
     IBLStrength 2
   }
-  randomSeed 14
-  flatCenter TRUE
-  flatBounds TRUE
-  perlinNOctaves 10
 }
